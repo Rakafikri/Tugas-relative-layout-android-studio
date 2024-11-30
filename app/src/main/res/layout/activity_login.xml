@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="206dp"
+        android:layout_height="223dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="95dp"
+        app:srcCompat="@drawable/icon" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:text="Silahkan Login"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="1dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view2"
+        android:ems="10"
+        android:hint="Masukkan Email Anda"
+        android:inputType="textEmailAddress" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/email" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view3"
+        android:ems="10"
+        android:hint="Masukkan Password Anda"
+        android:inputType="textPassword" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/password" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view4"
+        android:text="Login"
+        android:backgroundTint="#e00404"/>
+
+</RelativeLayout>
