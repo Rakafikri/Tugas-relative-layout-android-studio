@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         Thread thread = new Thread(){
             public void run(){
                 try {
-                    sleep(200);
+                    sleep(2000);
                 }catch (InterruptedException ex){
                     ex.printStackTrace();
                 }finally{
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                     finish();
                 }
             }
-        };
+        };thread.start();
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
